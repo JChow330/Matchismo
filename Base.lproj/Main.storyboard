@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Fy-l9-2Ft">
+                                <rect key="frame" x="268" y="252" width="64" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="gV1-jj-qbN"/>
+                                    <constraint firstAttribute="width" constant="64" id="isO-6d-od4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Ow-D7-3oc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9N-wG-gSO">
+                                <rect key="frame" x="16" y="559" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="6V4-4d-eGP"/>
+                                    <constraint firstAttribute="width" constant="568" id="EFl-4p-2Nk"/>
+                                    <constraint firstAttribute="height" constant="21" id="FLx-Xc-2nR"/>
+                                    <constraint firstAttribute="height" constant="21" id="JVE-fm-4Qn"/>
+                                    <constraint firstAttribute="width" constant="568" id="MEL-dI-KQb"/>
+                                    <constraint firstAttribute="height" constant="21" id="Q7q-8L-mY2"/>
+                                    <constraint firstAttribute="width" constant="568" id="zj3-1T-qd9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6V4-4d-eGP"/>
+                                        <exclude reference="EFl-4p-2Nk"/>
+                                        <exclude reference="FLx-Xc-2nR"/>
+                                        <exclude reference="JVE-fm-4Qn"/>
+                                        <exclude reference="MEL-dI-KQb"/>
+                                        <exclude reference="Q7q-8L-mY2"/>
+                                        <exclude reference="zj3-1T-qd9"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="u9N-wG-gSO" secondAttribute="centerY" constant="-269.5" id="49Y-u1-pHv"/>
+                            <constraint firstAttribute="centerX" secondItem="u9N-wG-gSO" secondAttribute="centerX" id="4Wp-Uq-87V"/>
+                            <constraint firstAttribute="centerX" secondItem="u9N-wG-gSO" secondAttribute="centerX" id="7KL-tk-Amy"/>
+                            <constraint firstItem="u9N-wG-gSO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="539" id="7Wy-j7-Ui5"/>
+                            <constraint firstAttribute="centerY" secondItem="u9N-wG-gSO" secondAttribute="centerY" constant="-269.5" id="LDA-Cm-peg"/>
+                            <constraint firstAttribute="centerX" secondItem="6Fy-l9-2Ft" secondAttribute="centerX" id="Qqf-wv-zyN"/>
+                            <constraint firstAttribute="centerX" secondItem="u9N-wG-gSO" secondAttribute="centerX" id="Rju-2a-isI"/>
+                            <constraint firstAttribute="centerX" secondItem="u9N-wG-gSO" secondAttribute="centerX" id="bPu-fR-Owd"/>
+                            <constraint firstAttribute="centerY" secondItem="u9N-wG-gSO" secondAttribute="centerY" constant="-269.5" id="g8u-cK-e6W"/>
+                            <constraint firstAttribute="centerY" secondItem="u9N-wG-gSO" secondAttribute="centerY" constant="-269.5" id="lrd-Br-9PY"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="u9N-wG-gSO" secondAttribute="bottom" constant="20" id="pRK-MH-wrU"/>
+                            <constraint firstAttribute="centerY" secondItem="6Fy-l9-2Ft" secondAttribute="centerY" id="pw2-sK-mHq"/>
+                            <constraint firstAttribute="centerY" secondItem="u9N-wG-gSO" secondAttribute="centerY" constant="-269.5" id="rWN-qw-6ZS"/>
+                            <constraint firstAttribute="centerX" secondItem="u9N-wG-gSO" secondAttribute="centerX" id="wI7-dP-J0g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="49Y-u1-pHv"/>
+                                <exclude reference="4Wp-Uq-87V"/>
+                                <exclude reference="7KL-tk-Amy"/>
+                                <exclude reference="7Wy-j7-Ui5"/>
+                                <exclude reference="LDA-Cm-peg"/>
+                                <exclude reference="Rju-2a-isI"/>
+                                <exclude reference="bPu-fR-Owd"/>
+                                <exclude reference="g8u-cK-e6W"/>
+                                <exclude reference="lrd-Br-9PY"/>
+                                <exclude reference="rWN-qw-6ZS"/>
+                                <exclude reference="wI7-dP-J0g"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="flipsLabel" destination="u9N-wG-gSO" id="kqe-vP-B71"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cardback" width="64" height="96"/>
+    </resources>
+</document>
